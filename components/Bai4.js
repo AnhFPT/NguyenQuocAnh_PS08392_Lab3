@@ -11,4 +11,7 @@ export default class Bai4 extends Component {
             </View>
         )
     }
+    static navigationOptions = {
+        title: 'Bài 4 - Images',
+    }
 }

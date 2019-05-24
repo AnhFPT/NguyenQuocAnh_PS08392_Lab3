@@ -17,4 +17,7 @@ export default class Bai1 extends Component {
             />
         )
     }
+    static navigationOptions = {
+        title: 'Bài 1 - ListView',
+    }
 }

@@ -34,6 +34,9 @@ export default class Bai3 extends Component {
             </View>
         )
     }
+    static navigationOptions = {
+        title: 'Bài 3 - ScrollView',
+    }
 }
 const styles = StyleSheet.create({
     item:{

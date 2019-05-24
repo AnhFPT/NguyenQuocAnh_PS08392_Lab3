@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, TouchableOpacity, Image } from 'react-native'
+import { Text, View, StyleSheet, TouchableOpacity, Image, ImageBackground } from 'react-native'
 
 export default class Home extends Component {
     clickMoveBai1() {
@@ -16,20 +16,22 @@ export default class Home extends Component {
     }
     render() {
         return (
-            <View>
-                <TouchableOpacity onPress={() => { this.clickMoveBai1() }} style={styles.button}>
-                    <Text style={styles.text}>Mở Bài 1 - ListView</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => { this.clickMoveBai2() }} style={styles.button}>
-                    <Text style={styles.text}>Mở Bài 2 - TextInput</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => { this.clickMoveBai3() }} style={styles.button}>
-                    <Text style={styles.text}>Mở Bài 3 - ScrollView</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => { this.clickMoveBai4() }} style={styles.button}>
-                    <Text style={styles.text}>Mở Bài 4 - Images</Text>
-                </TouchableOpacity>
-            </View>
+            <ImageBackground source={require('./images/bglab3.jpg')} style={{ width: '100%', height: '100%' }}>
+                <View>
+                    <TouchableOpacity onPress={() => { this.clickMoveBai1() }} style={styles.button}>
+                        <Text style={styles.text}>Mở Bài 1 - ListView</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => { this.clickMoveBai2() }} style={styles.button}>
+                        <Text style={styles.text}>Mở Bài 2 - TextInput</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => { this.clickMoveBai3() }} style={styles.button}>
+                        <Text style={styles.text}>Mở Bài 3 - ScrollView</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => { this.clickMoveBai4() }} style={styles.button}>
+                        <Text style={styles.text}>Mở Bài 4 - Images</Text>
+                    </TouchableOpacity>
+                </View>
+            </ImageBackground>
         )
     }
 

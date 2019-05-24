@@ -30,6 +30,7 @@ export default class Bai2 extends Component {
                     placeholder="Nhập Password"
                     placeholderTextColor="#9a73ef"
                     autoCapitalize="none"
+                    secureTextEntry={true}
                     onChangeText={this.handlePassword}
                 />
                 <TouchableOpacity style={styles.submitButton}
@@ -41,11 +42,14 @@ export default class Bai2 extends Component {
             </View>
         )
     }
+    static navigationOptions = {
+        title: 'Bài 2 - TextInput',
+    }
 
 }
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 23
+        paddingTop: 23,
     },
     input: {
         margin: 15,
